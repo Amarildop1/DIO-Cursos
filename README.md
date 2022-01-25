@@ -1,3 +1,3 @@
 ### DIO-Cursos
 
-Exercícios de Cursos feitos na Digital Innovation One - DIO
+Exercícios de Bootcamps e Cursos feitos na Digital Innovation One - DIO
