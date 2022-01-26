@@ -54,6 +54,7 @@ header nav a:hover{
 .filme-principal .container .descricao{
     margin-bottom: 50px;
     margin-top: 20px;
+    line-height: 20px;
 }
 
 .filme-principal .container .titulo{
@@ -89,4 +90,10 @@ header nav a:hover{
 }
 .filme-principal .container{
     width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
 }
