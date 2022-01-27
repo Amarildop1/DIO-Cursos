@@ -37,21 +37,23 @@
                     <p class="descricao"> Um grupo de sobreviventes em um mundo pós-apocalíptico cheio de mortos-vivos. Acompanhe a jornada do grupo liderado por Rick Grimes, em busca de suprimentos e refúgios seguros. Além disso, os sobreviventes têm que lidar com dilemas morais, sentimentos confusos e desafios do dia-a-dia em um mundo hostil e praticamente dominado por mortos-vivos. </p>
                 
                     <div class="botoes">
-                        <button role="button" class="botao">
+                        <button role="button" class="botao" onclick="abrirNetflix()" title="Abrir Netflix">
                             <i class="fas fa-play"></i>
                             Assistir Agora
                         </button>
-                        <button role="button" class="botao">
+                        <button role="button" class="botao" onclick="abrirInformacoes()" title="Fique por dentro de tudo.">
                             <i class="fas fa-info-circle"></i>
                             Mais Informações
                         </button>
                     </div>
-                
-                
+
                 </div> <!-- Final .container -->
             </div> <!-- Final .filme-principal -->
         </main>
 
+        <div class="legenda-carousel">
+            <h2> Séries </h2>
+        </div>
         <div class="carrosel-filme">
             <div class="owl-carousel owl-theme">
                 <div class="item">
@@ -80,6 +82,9 @@
                 </div>
             </div>
 
+            <div class="legenda-carousel">
+                <h2> Novidades </h2>
+            </div>
             <div class="owl-carousel owl-theme">
                 <div class="item">
                     <img class="box-filme" src="img/imagem-v(1).jpg" alt="Imagem">
@@ -114,7 +119,12 @@
             </div>
         </div><!-- Final .carrosel-filme -->
 
-        
+        <footer>
+            <div class="rodape">
+                <p> Desenvolvido como exercício de um Bootcamp na DIO </p>
+            </div>
+        </footer>
+
         <!-- OWL Carousel JS -->
         <script src="js/owl-carousel/jquery.min.js"></script>
         <script src="js/owl-carousel/owl.carousel.min.js"></script>
