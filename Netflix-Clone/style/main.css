@@ -97,3 +97,12 @@ header nav a:hover{
     width: 100%;
     display: block;
 }
+
+.carrosel-filme .item img:hover{
+    transition: 0.3s ease;
+    border: 4px solid white;
+}
+
+.carrosel-filme{
+    margin-top: 1rem;
+}
