@@ -1,7 +1,8 @@
-#### Netflix Clone
+### Netflix Clone
 
-Exercício feito como etapa de um bootcamp na Digital Innovation One - DIO
+> Exercício feito como etapa de um bootcamp na Digital Innovation One - DIO
 
+- Página inicial
 
 <img src="TWD-01.png" width="1360" height="700">
 
