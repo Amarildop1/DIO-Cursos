@@ -1,0 +1,42 @@
+@media screen and (max-width: 700px) {
+    header .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botao{
+        margin-top: 5px;
+        width: 300px;
+    }
+
+    .filme-principal .container{
+        width: 80%;
+    }
+    
+    .filme-principal .container .titulo{
+        font-size: 20px;
+    }
+
+    header .container{
+        margin-right: 10px;
+        padding-bottom: 1rem;
+    }
+
+    .filme-principal{
+        height: 500px;
+        align-items: center;
+    }
+
+    body .legenda-carousel{
+        margin: 1rem;
+    }
+    body .legenda-carousel h2{
+        font-size: 1.4rem;
+    }
+
+    footer .rodape{
+        height: 5rem;
+        text-align: center;
+    }
+
+}

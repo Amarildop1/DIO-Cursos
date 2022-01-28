@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Netflix Clone</title>
+        <link rel="stylesheet" href="style/main.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+            integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+        <!-- Responsividade -->
+        <link rel="stylesheet" href="style/responsive.css">
+
+        <!-- OWL Carousel CSS -->
+        <link rel="stylesheet" href="style/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="style/owl-carousel/owl.theme.default.min.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <h2 class="logo">NETFLIX</h2>
+                <nav>
+                    <a href="#">Início</a>
+                    <a href="#">Séries</a>
+                    <a href="#">Filmes</a>
+                    <a href="#">Documentários</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="filme-principal">
+                <div class="container">
+                    <h3 class="titulo"> THE WALKING DEAD </h3>
+                    <p class="descricao"> Um grupo de sobreviventes em um mundo pós-apocalíptico cheio de mortos-vivos. Acompanhe a jornada do grupo liderado por Rick Grimes, em busca de suprimentos e refúgios seguros. Além disso, os sobreviventes têm que lidar com dilemas morais, sentimentos confusos e desafios do dia-a-dia em um mundo hostil e praticamente dominado por mortos-vivos. </p>
+                
+                    <div class="botoes">
+                        <button role="button" class="botao" onclick="abrirNetflix()" title="Abrir Netflix">
+                            <i class="fas fa-play"></i>
+                            Assistir Agora
+                        </button>
+                        <button role="button" class="botao" onclick="abrirInformacoes()" title="Fique por dentro de tudo.">
+                            <i class="fas fa-info-circle"></i>
+                            Mais Informações
+                        </button>
+                    </div>
+
+                </div> <!-- Final .container -->
+            </div> <!-- Final .filme-principal -->
+        </main>
+
+        <div class="legenda-carousel">
+            <h2> Séries </h2>
+        </div>
+        <div class="carrosel-filme">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img class="box-filme" src="img/imagem-h(1).jpg" alt="Imagem">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/imagem-h(2).jpg" alt="Imagem">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/imagem-h(3).jpg" alt="Imagem">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/imagem-h(4).jpg" alt="Imagem">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/imagem-h(5).jpg" alt="Imagem">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/imagem-h(6).jpg" alt="Imagem">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/imagem-h(7).jpg" alt="Imagem">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/imagem-h(8).jpg" alt="Imagem">
+                </div>
+            </div>
+
+            <div class="legenda-carousel">
+                <h2> Novidades </h2>
+            </div>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img class="box-filme" src="img/imagem-v(1).jpg" alt="Imagem">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/imagem-v(2).jpg" alt="Imagem">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/imagem-v(3).jpg" alt="Imagem">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/imagem-v(4).jpg" alt="Imagem">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/imagem-v(5).jpg" alt="Imagem">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/imagem-v(6).jpg" alt="Imagem">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/imagem-v(7).jpg" alt="Imagem">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/imagem-v(8).jpg" alt="Imagem">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/imagem-v(9).jpg" alt="Imagem">
+                </div>
+                <div class="item">
+                    <img class="box-filme" src="img/imagem-v(10).jpg" alt="Imagem">
+                </div>
+            </div>
+        </div><!-- Final .carrosel-filme -->
+
+        <footer>
+            <div class="rodape">
+                <p> Desenvolvido como exercício de um Bootcamp na DIO </p>
+            </div>
+        </footer>
+
+        <!-- OWL Carousel JS -->
+        <script src="js/owl-carousel/jquery.min.js"></script>
+        <script src="js/owl-carousel/owl.carousel.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
