@@ -4,11 +4,11 @@
 
 Página no Smartphone
 
-<img src="instagram-smartphone2.png" width="1024" height="900">
+<img src="instagram-smartphone.png" width="600" height="900">
 
 ------
 
 Página no Desktop
 
-<img src="instagram-computer2.png" width="1660" height="1200">
+<img src="instagram-computer.png" width="1366" height="900">
 
