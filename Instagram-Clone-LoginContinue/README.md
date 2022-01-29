@@ -10,5 +10,13 @@ Página no Smartphone
 
 Página no Desktop
 
-<img src="instagram-computer.png" width="1366" height="800">
+<img src="instagram-computer.png" width="1366" height="700">
 
+------
+------
+
+- Computer
+<img src="Instagram-02.png" width="1366" height="700">
+
+- Smartphone
+<img src="Instagram-01.png" width="700" height="900">
