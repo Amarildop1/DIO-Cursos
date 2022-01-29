@@ -4,7 +4,7 @@
 
 Página no Smartphone
 
-<img src="instagram-smartphone.png" width="700" height="900">
+<img src="instagram-smartphone.png" width="650" height="850">
 
 ------
 
@@ -19,4 +19,4 @@ Página no Desktop
 <img src="Instagram-02.png" width="1366" height="700">
 
 - Smartphone
-<img src="Instagram-01.png" width="700" height="900">
+<img src="Instagram-01.png" width="650" height="850">
