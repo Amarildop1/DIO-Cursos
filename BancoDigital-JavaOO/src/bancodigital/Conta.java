@@ -1,5 +1,7 @@
 package bancodigital;
 
+import java.util.Date;
+
 public abstract class Conta implements IConta{
 
     private static final int AGENCIA_SEDE = 111;
@@ -9,10 +11,13 @@ public abstract class Conta implements IConta{
     protected int numero;
     protected double saldo;
     protected Cliente cliente;
+    protected Date dataAbertura;
 
-    public Conta() {
+    public Conta(Cliente cliente) {
         this.agencia = Conta.AGENCIA_SEDE;
         this.numero = Conta.SEQUENCIA_CONTA++;
+        this.cliente = cliente;
+        this.dataAbertura = new Date();
     }
 
     //Métodos get()
@@ -49,9 +54,11 @@ public abstract class Conta implements IConta{
         contaDestino.depositar(valor);
     }
     
-    public void imprimirDadosDaConta(){
+    public void imprimirDadosDaConta(){ 
+        System.out.println(String.format("Cliente: %s ", this.cliente.getNome()));
         System.out.println(String.format("Agência: %d ", this.agencia));
         System.out.println(String.format("Número: %d ", this.numero));
         System.out.println(String.format("Saldo: %.2f ", this.saldo));
+        System.out.println(String.format("Cliente desde: %s ", this.dataAbertura));
     }
 }
