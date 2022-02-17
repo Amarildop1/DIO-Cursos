@@ -1,6 +1,6 @@
 package bancodigital;
 
-public abstract class Conta {
+public abstract class Conta implements IConta{
 
     private static final int AGENCIA_SEDE = 111;
     private static int SEQUENCIA_CONTA = 1;
@@ -10,17 +10,12 @@ public abstract class Conta {
     protected double saldo;
     protected Cliente cliente;
 
-    public Conta(int agencia, int numero, double saldo, Cliente cliente) {
-        this.agencia = agencia;
-        this.numero = numero;
-        this.saldo = saldo;
-        this.cliente = cliente;
+    public Conta() {
+        this.agencia = Conta.AGENCIA_SEDE;
+        this.numero = Conta.SEQUENCIA_CONTA++;
     }
 
-    public static int getSEQUENCIA_CONTA() {
-        return SEQUENCIA_CONTA;
-    }
-
+    //Métodos get()
     public int getAgencia() {
         return agencia;
     }
@@ -37,14 +32,18 @@ public abstract class Conta {
         return cliente;
     }
     
+    
+    @Override
     public void sacar(double valor){
         this.saldo -= valor;
     }
 
+    @Override
     public void depositar(double valor){
         this.saldo += valor;
     }    
     
+    @Override
     public void transferir(double valor, Conta contaDestino){
         this.sacar(valor);
         contaDestino.depositar(valor);
