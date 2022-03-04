@@ -2,9 +2,9 @@ package src;
 
 import java.time.LocalDate;
 
-
 public class Principal {
     public static void main(String[] args) {
+        System.out.println("\n=============== Bootcamp ===============");
         
         Curso curso1 = new Curso();
         curso1.setTitulo("Programação Orientada à Objetos com Java");
@@ -15,8 +15,7 @@ public class Principal {
         curso2.setTitulo("Javascript e POO");
         curso2.setDescricao("Aulas de Javascript");
         curso2.setCargaHoraria(40);
-        
-        System.out.println("\n=============== Bootcamp ===============");
+
         System.out.println(curso1);
         System.out.println(curso2);
         
@@ -27,5 +26,8 @@ public class Principal {
         
         System.out.println(mentoria);
         
+        System.out.println("----------------------------------------");
+
+
     }//Final do método main
 }//Final da class Principal
