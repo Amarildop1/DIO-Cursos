@@ -1,6 +1,5 @@
-#### Exercícios de Cursos e Bootcamps feitos na Digital Innovation One - DIO
+### Exercícios de Cursos e Bootcamps feitos na Digital Innovation One - DIO
 > https://www.dio.me/
-
 
 
 Descrição dos projetos e exercícios deste repositório:
