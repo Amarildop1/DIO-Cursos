@@ -5,7 +5,7 @@ public class Curso extends Conteudo {
     private int cargaHoraria;
     
     public Curso(){
-    
+
     }
 
 

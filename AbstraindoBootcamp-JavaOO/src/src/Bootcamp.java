@@ -32,6 +32,18 @@ public class Bootcamp {
         this.descricao = descricao;
     }
 
+    //get data inicial
+    public LocalDate getDataInicial() {
+        return dataInicial;
+    }
+
+    //get data final
+    public LocalDate getDataFinal() {
+        return dataFinal;
+    }
+
+    
+    
     //get e set
     public Set<Developer> getDevsInscritos() {
         return devsInscritos;

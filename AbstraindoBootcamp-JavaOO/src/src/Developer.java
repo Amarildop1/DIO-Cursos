@@ -2,16 +2,15 @@ package src;
 
 import java.util.LinkedHashSet;
 import java.util.Objects;
+import java.util.Optional;
 import java.util.Set;
 
 
 public class Developer {
-
     private String nome;
     private Set<Conteudo> conteudosInscritos = new LinkedHashSet<>();
     private Set<Conteudo> conteudosConcluindos = new LinkedHashSet<>();
     
-
     public String getNome() {
         return nome;
     }
@@ -35,15 +34,23 @@ public class Developer {
 
 
     public void inscreverEmBootcamp(Bootcamp bootcamp){
-    
+        this.conteudosInscritos.addAll(bootcamp.getConteudos());
+        bootcamp.getDevsInscritos().add(this);    
     }
 
     public void progredir(){
-    
+        Optional<Conteudo> conteudo = this.conteudosInscritos.stream().findFirst();
+        
+        if(conteudo.isPresent()){
+            this.conteudosConcluindos.add(conteudo.get());
+            this.conteudosInscritos.remove(conteudo.get());
+        }else{
+            System.err.println("Você não está matriculado em nenhum conteúdo!");        
+        }
     }
 
-    public void calcularTotalXP(){
-    
+    public double calcularTotalXP(){
+        return this.conteudosConcluindos.stream().mapToDouble(conteudo -> conteudo.calcularXP()).sum();    
     }
 
 
@@ -73,8 +80,6 @@ public class Developer {
         }
         return Objects.equals(this.conteudosConcluindos, other.conteudosConcluindos);
     }
-
-
 
 
 }//Final da class Developer
