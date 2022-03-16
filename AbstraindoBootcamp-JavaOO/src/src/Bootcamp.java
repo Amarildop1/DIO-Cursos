@@ -42,8 +42,7 @@ public class Bootcamp {
         return dataFinal;
     }
 
-    
-    
+
     //get e set
     public Set<Developer> getDevsInscritos() {
         return devsInscritos;
