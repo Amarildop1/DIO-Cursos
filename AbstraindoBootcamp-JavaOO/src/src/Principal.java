@@ -41,14 +41,24 @@ public class Principal {
         System.out.println("Conteúdos Inscritos: " + devJohn.getConteudosInscritos());
         
         devJohn.progredir();
+        devJohn.progredir();
+        
+        System.out.println("- - - - - Após John consumir alguns conteúdos! - - - - -");
+        System.out.println("Conteúdos Inscritos: " + devJohn.getConteudosInscritos());
         System.out.println("Conteúdos Concluídos: " + devJohn.getConteudosConcluindos());
+        System.out.println("XP: " + devJohn.calcularTotalXP());
         
         Developer devAnna = new Developer();
         devAnna.setNome("Anna Júlia");
         devAnna.inscreverEmBootcamp(bootcamp);
         System.out.println("Conteúdos Inscritos: " + devAnna.getConteudosInscritos());
+        
+        System.out.println("- - - - -  Após Anna consumir alguns conteúdos! - - - - -");
         devAnna.progredir();
+        
+        System.out.println("Conteúdos Inscritos: " + devAnna.getConteudosInscritos());
         System.out.println("Conteúdos Concluídos: " + devAnna.getConteudosConcluindos());
+        System.out.println("XP: " + devAnna.calcularTotalXP());
 
         System.out.println("\n==================== FINAL ====================");
         
