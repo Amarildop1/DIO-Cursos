@@ -1,13 +1,9 @@
 package src;
 
-
 public class Curso extends Conteudo {
     private int cargaHoraria;
-    
-    public Curso(){
 
-    }
-
+    public Curso(){    }
 
     public int getCargaHoraria() {
         return cargaHoraria;
@@ -24,10 +20,6 @@ public class Curso extends Conteudo {
     @Override
     public int calcularXP() {
         return XP_PADRAO * cargaHoraria;
-
     }
-    
-    
-    
-    
+
 } //Final da class Curso

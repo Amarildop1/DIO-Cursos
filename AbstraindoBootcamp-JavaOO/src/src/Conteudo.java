@@ -1,16 +1,15 @@
 package src;
 
-
 public abstract class Conteudo {
-    
+
     protected static final int XP_PADRAO = 20;
-    
+
     private String titulo;
     private String descricao;
-    
+
     public abstract int calcularXP();
 
-    
+
     public String getTitulo() {
         return titulo;
     }
@@ -24,6 +23,6 @@ public abstract class Conteudo {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
-    
-    
+
+
 }//Final da class Conteudo

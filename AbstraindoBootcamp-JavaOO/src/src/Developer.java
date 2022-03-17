@@ -9,8 +9,8 @@ import java.util.Set;
 public class Developer {
     private String nome;
     private Set<Conteudo> conteudosInscritos = new LinkedHashSet<>();
-    private Set<Conteudo> conteudosConcluindos = new LinkedHashSet<>();
-    
+    private Set<Conteudo> conteudosConcluidos = new LinkedHashSet<>();
+
     public String getNome() {
         return nome;
     }
@@ -25,11 +25,11 @@ public class Developer {
         this.conteudosInscritos = conteudosInscritos;
     }
 
-    public Set<Conteudo> getConteudosConcluindos() {
-        return conteudosConcluindos;
+    public Set<Conteudo> getConteudosConcluidos() {
+        return conteudosConcluidos;
     }
-    public void setConteudosConcluindos(Set<Conteudo> conteudosConcluindos) {
-        this.conteudosConcluindos = conteudosConcluindos;
+    public void setConteudosConcluidos(Set<Conteudo> conteudosConcluidos) {
+        this.conteudosConcluidos = conteudosConcluidos;
     }
 
 
@@ -42,7 +42,7 @@ public class Developer {
         Optional<Conteudo> conteudo = this.conteudosInscritos.stream().findFirst();
 
         if(conteudo.isPresent()){
-            this.conteudosConcluindos.add(conteudo.get());
+            this.conteudosConcluidos.add(conteudo.get());
             this.conteudosInscritos.remove(conteudo.get());
         }else{
             System.err.println("Você não está matriculado em nenhum conteúdo!");
@@ -50,7 +50,7 @@ public class Developer {
     }
 
     public double calcularTotalXP(){
-        return this.conteudosConcluindos.stream().mapToDouble(conteudo -> conteudo.calcularXP()).sum();
+        return this.conteudosConcluidos.stream().mapToDouble(conteudo -> conteudo.calcularXP()).sum();
     }
 
 
@@ -59,7 +59,7 @@ public class Developer {
         int hash = 7;
         hash = 41 * hash + Objects.hashCode(this.nome);
         hash = 41 * hash + Objects.hashCode(this.conteudosInscritos);
-        hash = 41 * hash + Objects.hashCode(this.conteudosConcluindos);
+        hash = 41 * hash + Objects.hashCode(this.conteudosConcluidos);
         return hash;
     }
 
@@ -78,7 +78,7 @@ public class Developer {
         if (!Objects.equals(this.nome, other.nome)) {
             return false;
         }
-        return Objects.equals(this.conteudosConcluindos, other.conteudosConcluindos);
+        return Objects.equals(this.conteudosConcluidos, other.conteudosConcluidos);
     }
 
 

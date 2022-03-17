@@ -8,7 +8,7 @@ import java.util.Set;
 
 
 public class Bootcamp {
-    
+
     private String nome;
     private String descricao;
     private final LocalDate dataInicial = LocalDate.now();
@@ -16,7 +16,7 @@ public class Bootcamp {
     private Set<Developer> devsInscritos = new HashSet<>();
     private Set<Conteudo> conteudos = new LinkedHashSet<>();
 
-    //get e set
+
     public String getNome() {
         return nome;
     }
@@ -24,7 +24,7 @@ public class Bootcamp {
         this.nome = nome;
     }
 
-    //get e set
+
     public String getDescricao() {
         return descricao;
     }
@@ -32,18 +32,16 @@ public class Bootcamp {
         this.descricao = descricao;
     }
 
-    //get data inicial
+    //Retorna a data inicial | A data de hoje está como padrão
     public LocalDate getDataInicial() {
         return dataInicial;
     }
-
-    //get data final
+    //Retorna a data final | O padrão é 60 dias após a data de hoje
     public LocalDate getDataFinal() {
         return dataFinal;
     }
 
 
-    //get e set
     public Set<Developer> getDevsInscritos() {
         return devsInscritos;
     }
@@ -51,7 +49,7 @@ public class Bootcamp {
         this.devsInscritos = devsInscritos;
     }
 
-    //get e set
+
     public Set<Conteudo> getConteudos() {
         return conteudos;
     }
@@ -101,8 +99,6 @@ public class Bootcamp {
         }
         return Objects.equals(this.conteudos, other.conteudos);
     }
-
-
 
 
 }//Final da class Bootcamp

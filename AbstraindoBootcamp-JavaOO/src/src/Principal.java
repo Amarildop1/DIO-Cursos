@@ -5,12 +5,12 @@ import java.time.LocalDate;
 public class Principal {
     public static void main(String[] args) {
         System.out.println("\n==================== Conteúdos ====================");
-        
+
         Curso curso1 = new Curso();
         curso1.setTitulo("Programação Orientada à Objetos com Java");
         curso1.setDescricao("Aulas de Java atualizadas");
         curso1.setCargaHoraria(40);
-        
+
         Curso curso2 = new Curso();
         curso2.setTitulo("Javascript e POO");
         curso2.setDescricao("Aulas de Javascript");
@@ -18,14 +18,14 @@ public class Principal {
 
         System.out.println(curso1);
         System.out.println(curso2);
-        
+
         Mentoria mentoria = new Mentoria();
         mentoria.setTitulo("Entrando no mercado com Java");
         mentoria.setDescricao("Programação com Java");
         mentoria.setData(LocalDate.now());
-        
+
         System.out.println(mentoria);
-        
+
         System.out.println("\n==================== Bootcamp ====================");
 
         Bootcamp bootcamp = new Bootcamp();
@@ -34,33 +34,33 @@ public class Principal {
         bootcamp.getConteudos().add(curso1);
         bootcamp.getConteudos().add(curso2);
         bootcamp.getConteudos().add(mentoria);
-        
+
         Developer devJohn = new Developer();
         devJohn.setNome("John John");
         devJohn.inscreverEmBootcamp(bootcamp);
-        System.out.println("Conteúdos Inscritos: " + devJohn.getConteudosInscritos());
-        
+        System.out.println("Conteúdos Inscritos: " + devJohn.getConteudosInscritos().toString());
+
         devJohn.progredir();
         devJohn.progredir();
-        
+
         System.out.println("- - - - - Após John consumir alguns conteúdos! - - - - -");
         System.out.println("Conteúdos Inscritos: " + devJohn.getConteudosInscritos());
-        System.out.println("Conteúdos Concluídos: " + devJohn.getConteudosConcluindos());
+        System.out.println("Conteúdos Concluídos: " + devJohn.getConteudosConcluidos());
         System.out.println("XP: " + devJohn.calcularTotalXP());
-        
+
         Developer devAnna = new Developer();
         devAnna.setNome("Anna Júlia");
         devAnna.inscreverEmBootcamp(bootcamp);
         System.out.println("Conteúdos Inscritos: " + devAnna.getConteudosInscritos());
-        
+
         System.out.println("- - - - -  Após Anna consumir alguns conteúdos! - - - - -");
         devAnna.progredir();
-        
+
         System.out.println("Conteúdos Inscritos: " + devAnna.getConteudosInscritos());
-        System.out.println("Conteúdos Concluídos: " + devAnna.getConteudosConcluindos());
+        System.out.println("Conteúdos Concluídos: " + devAnna.getConteudosConcluidos());
         System.out.println("XP: " + devAnna.calcularTotalXP());
 
         System.out.println("\n==================== FINAL ====================");
-        
+
     }//Final do método main
 }//Final da class Principal
