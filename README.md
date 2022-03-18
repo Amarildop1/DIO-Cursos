@@ -17,4 +17,14 @@ Página que simula a tela de continuação de Login do Instagram.
 Com layout responsivo.
 Utilizado HTML5 e CSS3.
 
+Página no Smartphone
+
+<img src="instagram-smartphone.png" width="650" height="850">
+
+------
+
+Página no Desktop
+
+<img src="instagram-computer.png" width="1366" height="700">
+
 #### Jogo de Naves
