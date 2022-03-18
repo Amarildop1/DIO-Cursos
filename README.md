@@ -2,7 +2,7 @@
 > https://www.dio.me/
 
 
-> Descrição dos projetos e exercícios deste repositório:
+### Descrição dos projetos e exercícios deste repositório:
 
 ## Abstraindo um Bootcamp:
 Implementação de classes que descrevem um bootcamp, com cursos, alunos e mentorias. 
@@ -18,13 +18,13 @@ Com layout responsivo. Utilizando HTML5 e CSS3.
 
 Página no Smartphone:
 
-<img src="instagram-smartphone.png" width="400" height="600">
+<img src="instagram-smartphone.png" width="450" height="600">
 
 ------
 
 Página no Desktop:
 
-<img src="instagram-computer.png" width="1066" height="450">
+<img src="instagram-computer.png" width="1066" height="550">
 
 
 ## Jogo de Naves
@@ -32,7 +32,7 @@ Jogo de Naves e resgate de reféns. Utilizando HTML5, CSS3, JavaScript e JQuery.
 
 ## Jogo Genius
 
-<img src="JogoGenius.png" width="1066" height="450">
+<img src="JogoGenius.png" width="980" height="450">
 
 
 ## Netflix Clone
