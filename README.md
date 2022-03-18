@@ -32,7 +32,7 @@ Jogo de Naves e resgate de reféns. Utilizando HTML5, CSS3, JavaScript e JQuery.
 
 ## Jogo Genius
 
-<img src="JogoGenius.png" width="980" height="450">
+<img src="JogoGenius.png" width="600" height="450">
 
 
 ## Netflix Clone
