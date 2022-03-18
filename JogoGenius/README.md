@@ -4,5 +4,5 @@
 
 Início:
 
-<img src="JogoGenius.png" width="800" height="450">
+<img src="JogoGenius.png" width="600" height="450">
 
