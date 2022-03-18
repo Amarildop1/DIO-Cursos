@@ -10,7 +10,7 @@ Usando a linguagem **Java** e os conceitos de **Programação Orientada à Objet
 
 ## Banco Digital:
 Simulação de um Banco, com classes que representam Contas, Clientes e Banco. 
-Usando a linaguagem **Java** e os conceitos de **Programação Orientada à Objetos.**
+Usando a linguagem **Java** e os conceitos de **Programação Orientada à Objetos.**
 
 ## Instagram Clone
 Página que simula a tela de continuação de Login do Instagram.
@@ -26,10 +26,22 @@ Página no Desktop:
 
 <img src="instagram-computer.png" width="1066" height="450">
 
+
 ## Jogo de Naves
 Jogo de Naves e resgate de reféns. Utilizando HTML5, CSS3, JavaScript e JQuery.
 
 ## Jogo Genius
 
+<img src="JogoGenius.png" width="1066" height="450">
+
+
 ## Netflix Clone
 Clone de uma Página inicial da Netflix.
+
+Página inicial:
+
+<img src="TWD-01.jpg" width="1360" height="700">
+
+------
+
+<img src="TWD-02.jpg" width="1360" height="700">
