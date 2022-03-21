@@ -1,4 +1,4 @@
-// Inicio da função start()
+/* Inicio da função start() */
 function start() { 
 
 	$("#inicio").hide();
@@ -8,9 +8,10 @@ function start() {
 	$("#fundoGame").append("<div id='inimigo2' class=''></div>");
 	$("#fundoGame").append("<div id='amigo' class='anima3'></div>");
 
-	//Principais variáveis do jogo
-
+	// Principais variáveis do jogo
 	var jogo = {};
+	var velocidade = 5;
+	var posicaoY = parseInt(Math.random() * 334);
 	var TECLA = {
 		W: 87,
 		S: 83,
@@ -20,7 +21,7 @@ function start() {
 	jogo.pressionou = [];
 
 
-	//Verifica se o usuário pressionou alguma tecla
+	// Verifica se o usuário pressionou alguma tecla
 	$(document).keydown(function(e){
 		jogo.pressionou[e.which] = true;
 	});
@@ -31,12 +32,13 @@ function start() {
 	});
 
 
-	//Game Loop
+	// Game Loop
 	jogo.timer = setInterval(loop, 30);
 
 	function loop() {
 		moveFundo();
 		moveJogador();
+		moveInimigo1();
 	}
 
 
@@ -44,8 +46,7 @@ function start() {
 	function moveFundo() {
 		esquerda = parseInt($("#fundoGame").css("background-position"));
 		$("#fundoGame").css("background-position", esquerda - 1);
-	}
-	// Final da função movefundo()
+	} /* Final da função moveFundo() */
 
 
 	/* Início da função que move o helicópeto do jogador */
@@ -76,5 +77,20 @@ function start() {
 	} /* Final da função que move o helicópeto do jogador */
 
 
-} // Final da função start()
+	/* Início da função que move o helicópeto do inimigo */
+	function moveInimigo1() {
+
+		posicaoX = parseInt($("#inimigo1").css("left"));
+		$("#inimigo1").css("left", posicaoX - velocidade);
+		$("#inimigo1").css("top", posicaoY);
+
+			if (posicaoX <= 0) { /* Recria a posicaoY para fazer o inimigo voltar ao inicio */
+				posicaoY = parseInt(Math.random() * 334);
+				$("#inimigo1").css("left", 694);
+				$("#inimigo1").css("top", posicaoY);
+			}
+	} /* Final da função que move o helicópeto do inimigo */
+
+
+}/* Final da função start() */
 
