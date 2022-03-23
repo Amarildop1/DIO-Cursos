@@ -69,7 +69,7 @@ body {
 
 #inicio {
 	width: 350px;
-	height: 200px;
+	height: 220px;
 	background-color: #FFF;
  	margin-left: auto;
     margin-right: auto;
@@ -188,9 +188,25 @@ h3 {
 	width: 350px;
 	height: 200px;
 	background-color: #FFF;
- 	margin-left: auto;
-    	margin-right: auto;
- 	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
 	text-align: center;
 	padding: 10px;
+}
+
+
+.instrucoes p{
+	margin: 0px;
+	padding: 0px;
+}
+
+p span.clique{
+	cursor: pointer;
+	font-weight: 800;
+}
+
+p span.clique:hover{
+	cursor: pointer;
+	text-decoration: underline;
 }

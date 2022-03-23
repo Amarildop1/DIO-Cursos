@@ -1,4 +1,4 @@
-/* Inicio da função start() */
+/* INÍCIO DA FUNÇÃO start() */
 function start() { 
 
 	$("#inicio").hide();
@@ -402,17 +402,17 @@ function start() {
 
 		$("#fundoGame").append("<div id='fim'></div>");
 
-		$("#fim").html("<h1> Game Over </h1><p>Sua pontuação foi: " + pontos + "</p>" + "<div id='reinicia' onClick=reiniciaJogo()><h3>Jogar Novamente</h3></div>");
+		$("#fim").html("<h1> Game Over </h1><p>Sua pontuação foi: " + pontos + "</p>" + "<div id='reinicia' onClick=reiniciaJogo()><h3>Jogar Novamente ?</h3> <p> <span class='clique'> Clique aqui! </span> </p> </div>");
 
 	} /* Final da função gameOver() */
 
 
-} /* Final da função start() */
+} /* FINAL DA FUNÇÃO start() */
 
-//Reinicia o Jogo			
+
+/* Reinicia o Jogo após um Game Over */
 function reiniciaJogo() {
 	somGameover.pause();
 	$("#fim").remove();
 	start();
-		
-} //Fim da função reiniciaJogo
+}
