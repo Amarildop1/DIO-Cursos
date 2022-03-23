@@ -26,7 +26,6 @@ function start() {
 		jogo.pressionou[e.which] = true;
 	});
 
-
 	$(document).keyup(function(e){
 		jogo.pressionou[e.which] = false;
 	});
@@ -39,6 +38,8 @@ function start() {
 		moveFundo();
 		moveJogador();
 		moveInimigo1();
+		moveInimigo2();
+		moveAmigo()
 	}
 
 
@@ -49,7 +50,7 @@ function start() {
 	} /* Final da função moveFundo() */
 
 
-	/* Início da função que move o helicópeto do jogador */
+	/* Início da função que move o helicóptero do jogador */
 	function moveJogador() {
 		if (jogo.pressionou[TECLA.W]) {
 			var topo = parseInt($("#jogador").css("top"));
@@ -74,12 +75,11 @@ function start() {
 			//Chama função Disparo
 		}
 
-	} /* Final da função que move o helicópeto do jogador */
+	} /* Final da função que move o helicóptero do jogador */
 
 
-	/* Início da função que move o helicópeto do inimigo */
+	/* Início da função que move o helicóptero do inimigo */
 	function moveInimigo1() {
-
 		posicaoX = parseInt($("#inimigo1").css("left"));
 		$("#inimigo1").css("left", posicaoX - velocidade);
 		$("#inimigo1").css("top", posicaoY);
@@ -89,8 +89,31 @@ function start() {
 				$("#inimigo1").css("left", 694);
 				$("#inimigo1").css("top", posicaoY);
 			}
-	} /* Final da função que move o helicópeto do inimigo */
+	} /* Final da função que move o helicóptero do inimigo */
 
 
-}/* Final da função start() */
+	/* Início da função que move o caminhão do inimigo */
+	function moveInimigo2() {
+        posicaoX = parseInt($("#inimigo2").css("left"));
+		$("#inimigo2").css("left", posicaoX - 3);
+
+		if (posicaoX <= 0) {
+			$("#inimigo2").css("left", 775);
+		}
+	} /* Final da função que move o caminhão do inimigo */
+
+
+	/* Início da função que move o amigo */
+	function moveAmigo() {
+		posicaoX = parseInt($("#amigo").css("left"));
+		$("#amigo").css("left",posicaoX+1);
+
+		if (posicaoX>906) {
+			$("#amigo").css("left",0);
+		}
+	} /* Final da função que move o amigo */
+
+
+
+} /* Final da função start() */
 
