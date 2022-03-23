@@ -17,6 +17,7 @@ function start() {
 		S: 83,
 		D: 68
 	};
+	var podeAtirar = true;
 
 	jogo.pressionou = [];
 
@@ -71,8 +72,7 @@ function start() {
 		}
 
 		if (jogo.pressionou[TECLA.D]) {
-
-			//Chama função Disparo
+			disparo();
 		}
 
 	} /* Final da função que move o helicóptero do jogador */
@@ -113,6 +113,38 @@ function start() {
 		}
 	} /* Final da função que move o amigo */
 
+	/* Faz o helicóptero do jogador disparar */
+	function disparo() {
+
+		if (podeAtirar==true) {
+
+			podeAtirar=false;
+
+			topo = parseInt($("#jogador").css("top"))
+			posicaoX = parseInt($("#jogador").css("left"))
+			tiroX = posicaoX + 190;
+			topoTiro = topo + 50;
+			$("#fundoGame").append("<div id='disparo'></div");
+			$("#disparo").css("top", topoTiro);
+			$("#disparo").css("left", tiroX);
+
+			var tempoDisparo = window.setInterval(executaDisparo, 30);
+
+		} //Fecha podeAtirar
+
+		function executaDisparo() {
+			posicaoX = parseInt($("#disparo").css("left"));
+			$("#disparo").css("left", posicaoX + 15); 
+
+			if (posicaoX > 900) {	
+				window.clearInterval(tempoDisparo);
+				tempoDisparo = null;
+				$("#disparo").remove();
+				podeAtirar = true;
+
+			}
+		} /* Final executaDisparo() */
+	} /* Fecha disparo() */
 
 
 } /* Final da função start() */
