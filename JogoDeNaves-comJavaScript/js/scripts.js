@@ -7,10 +7,14 @@ function start() {
 	$("#fundoGame").append("<div id='inimigo1' class='anima2'></div>");
 	$("#fundoGame").append("<div id='inimigo2' class=''></div>");
 	$("#fundoGame").append("<div id='amigo' class='anima3'></div>");
+	$("#fundoGame").append("<div id='placar'></div>");
 
 	// Principais variáveis do jogo
 	var jogo = {};
 	var velocidade = 5;
+	var pontos = 0;
+	var salvos = 0;
+	var perdidos = 0;
 	var posicaoY = parseInt(Math.random() * 334);
 	var TECLA = {
 		W: 87,
@@ -43,6 +47,7 @@ function start() {
 		moveInimigo2();
 		moveAmigo()
 		colisao();
+		placar();
 	}
 
 
@@ -187,7 +192,7 @@ function start() {
 
 		/* Colisão do tiro com o helicóptero inimigo */
 		if (colisao3.length > 0) {
-
+			pontos = pontos + 100;
 			inimigo1X = parseInt($("#inimigo1").css("left"));
 			inimigo1Y = parseInt($("#inimigo1").css("top"));
 
@@ -203,7 +208,7 @@ function start() {
 
 		/* Colisão do tiro com o caminhão inimigo */
 		if (colisao4.length > 0) {
-
+			pontos = pontos + 50;
 			inimigo2X = parseInt($("#inimigo2").css("left"));
 			inimigo2Y = parseInt($("#inimigo2").css("top"));
 			$("#inimigo2").remove();
@@ -218,12 +223,23 @@ function start() {
 
 		/* /* Colisão do helicóptero do jogador com amigo */
 		if (colisao5.length > 0) {
-
+			salvos++;
 			reposicionaAmigo();
 			$("#amigo").remove();
 		}
 
 
+		/* Colisão entre amigo e caminhão inimigo */
+		if (colisao6.length > 0) {
+			perdidos++;
+			amigoX = parseInt($("#amigo").css("left"));
+			amigoY = parseInt($("#amigo").css("top"));
+			explosao3(amigoX, amigoY);
+			$("#amigo").remove();
+
+			reposicionaAmigo();
+
+		} /* Final da Colisão entre amigo e caminhão inimigo */
 
 
 	} /* Final da função colisao() entre Jogador, amigo e Inimigos */
@@ -303,8 +319,26 @@ function start() {
 	} /* Final da Função que reposiciona Amigo */
 
 
+	/* Explosão 3 */
+	function explosao3(amigoX, amigoY) {
+		$("#fundoGame").append("<div id='explosao3' class='anima4'></div");
+		$("#explosao3").css("top", amigoY);
+		$("#explosao3").css("left", amigoX);
+		var tempoExplosao3 = window.setInterval(resetaExplosao3, 1000);
+		
+		function resetaExplosao3() {
+			$("#explosao3").remove();
+			window.clearInterval(tempoExplosao3);
+			tempoExplosao3 = null;
+		}
+
+	} /* Final da função explosao3() */
 
 
+	function placar() {
+		$("#placar").html("<h2> Pontos: " + pontos + " Salvos: " + salvos + " Perdidos: " + perdidos + "</h2>");
+
+	} //fim da função placar()
 
 
 } /* Final da função start() */
