@@ -37,7 +37,7 @@ function start() {
 	/* FINAL DAS VARIÁVEIS DO JOGO */
 
 
-	// Música em loop
+	/* Fundo musical */
 	musica.addEventListener("ended", function(){ musica.currentTime = 0; musica.play(); }, false);
 	musica.play();
 
@@ -379,16 +379,40 @@ function start() {
 
 		if (energiaAtual == 0) {
 			$("#energia").css("background-image", "url(imgs/energia0.png)");
-			
-			//Game Over
+
+			gameOver();
 		}
 
-	} /* Final da Barra de Energia/Vidas do jogador */	
+	} /* Final da Barra de Energia/Vidas do jogador */
 
 
+	/* GAME OVER */
+	function gameOver() {
+		fimDeJogo = true;
+		musica.pause();
+		somGameover.play();
 
+		window.clearInterval(jogo.timer);
+		jogo.timer = null;
 
+		$("#jogador").remove();
+		$("#inimigo1").remove();
+		$("#inimigo2").remove();
+		$("#amigo").remove();
+
+		$("#fundoGame").append("<div id='fim'></div>");
+
+		$("#fim").html("<h1> Game Over </h1><p>Sua pontuação foi: " + pontos + "</p>" + "<div id='reinicia' onClick=reiniciaJogo()><h3>Jogar Novamente</h3></div>");
+
+	} /* Final da função gameOver() */
 
 
 } /* Final da função start() */
 
+//Reinicia o Jogo			
+function reiniciaJogo() {
+	somGameover.pause();
+	$("#fim").remove();
+	start();
+		
+} //Fim da função reiniciaJogo
