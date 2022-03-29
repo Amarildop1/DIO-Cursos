@@ -20,11 +20,11 @@ Com layout responsivo. Utilizando HTML5 e CSS3.
 
 
 ##### Página no Smartphone:
-<img src="instagram-smartphone.png" width="450" height="600">
+<img src="Instagram-Clone-LoginContinue/instagram-smartphone.png" width="450" height="600">
 
 
 ##### Página no Desktop:
-<img src="instagram-computer.png" width="1066" height="550">
+<img src="Instagram-Clone-LoginContinue/instagram-computer.png" width="1066" height="550">
 
 ------
 
@@ -44,7 +44,7 @@ Jogo de Naves e resgate de reféns. Utilizando HTML5, CSS3, JavaScript e JQuery.
 
 ## Jogo Genius
 
-<img src="JogoGenius.png" width="600" height="450">
+<img src="JogoGenius/JogoGenius.png" width="600" height="450">
 
 ------
 
@@ -53,8 +53,8 @@ Clone de uma Página inicial da Netflix.
 
 Página inicial:
 
-<img src="TWD-01.jpg" width="1360" height="700">
+<img src="Netflix-Clone-HomePage/TWD-01.jpg" width="1360" height="700">
 
 ------
 
-<img src="TWD-02.jpg" width="1360" height="700">
+<img src="Netflix-Clone-HomePage/TWD-02.jpg" width="1360" height="700">
