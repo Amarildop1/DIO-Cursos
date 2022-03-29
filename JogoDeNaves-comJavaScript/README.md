@@ -2,10 +2,14 @@
 > Feito em etapa de um bootcamp
 
 
-
-
-<img src=".jpg" width="" height="">
+##### Início:
+<img src="ImageGame00.jpeg" width="" height="">
 
 ------
 
-<img src=".jpg" width="" height="">
+##### Jogo iniciado:
+<img src="ImageGame01.jpeg" width="" height="">
+
+------
+
+<img src="ImageGame02.jpeg" width="" height="">
