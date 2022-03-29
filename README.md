@@ -32,13 +32,13 @@ Com layout responsivo. Utilizando HTML5 e CSS3.
 Jogo de Naves e resgate de reféns. Utilizando HTML5, CSS3, JavaScript e JQuery.
 
 ##### Início:
-<img src="JogoDeNaves-comJavaScript/ImageGame00.jpeg" width="600" height="400">
+<img src="JogoDeNaves-comJavaScript/ImageGame00.jpeg" width="700" height="450">
 
 ##### Jogo iniciado:
-<img src="/JogoDeNaves-comJavaScript/ImageGame01.jpeg" width="600" height="400">
+<img src="/JogoDeNaves-comJavaScript/ImageGame01.jpeg" width="700" height="450">
 
 ##### Restando 2 vidas:
-<img src="JogoDeNaves-comJavaScript/ImageGame02.jpeg" width="600" height="400">
+<img src="JogoDeNaves-comJavaScript/ImageGame02.jpeg" width="700" height="450">
 
 ------
 
